@@ -55,6 +55,62 @@
       "price": "1200000",
       "qty": "5",
       "id": 7
+    },
+    {
+      "brand": "Maruti",
+      "model": "Alto 800",
+      "year": 2011,
+      "price": "400000",
+      "qty": "5",
+      "id": 8
+    },
+    {
+      "brand": "Maruti",
+      "model": "WagonR",
+      "year": 2017,
+      "price": "600000",
+      "qty": "5",
+      "id": 9
+    },
+    {
+      "brand": "Maruti",
+      "model": "Baleno",
+      "year": 2018,
+      "price": "800000",
+      "qty": "5",
+      "id": 10
+    },
+    {
+      "brand": "Hyundai",
+      "model": "Accent",
+      "year": 2017,
+      "price": "100000",
+      "qty": "5",
+      "id": 11
+    },
+    {
+      "brand": "Honda",
+      "model": "City",
+      "year": 2018,
+      "price": "700000",
+      "qty": "5",
+      "id": 12
+    },
+    {
+      "brand": "Ford",
+      "model": "Eco Sport",
+      "year": 2018,
+      "price": "1100000",
+      "qty": "5",
+      "id": 13
+    },
+    {
+      "brand": "Honda",
+      "model": "Brezza",
+      "year": 2019,
+      "price": "1200000",
+      "qty": "5",
+      "id": 14
     }
   ]
 }
