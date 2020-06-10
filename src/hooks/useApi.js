@@ -9,7 +9,6 @@ export function useApi(url) {
 
   const getApiData = async () => {
     const response = await fetch(url);
-
     const responseData = await response.json();
     setData(responseData);
   };

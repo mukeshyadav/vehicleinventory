@@ -10,9 +10,7 @@ export const useInfniteScroll = callback => {
 
   useEffect(() => {
     if (!isFetching) return;
-    callback(() => {
-      console.log("called back");
-    });
+    callback();
   }, [isFetching]);
 
   function handleScroll() {
@@ -20,11 +18,9 @@ export const useInfniteScroll = callback => {
       window.innerHeight + document.documentElement.scrollTop !==
         document.documentElement.offsetHeight ||
       isFetching
-    ) {
+    )
       return;
-    } else {
-      setIsFetching(true);
-    }
+    setIsFetching(true);
   }
 
   return [isFetching, setIsFetching];

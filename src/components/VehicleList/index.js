@@ -14,13 +14,16 @@ export default function VehicleList() {
 
   useEffect(() => {
     dispatch({ type: "GET_VEHICLES", payload: allVehiclesData });
-  }, [currentPageIndex]);
+  }, [allVehiclesData]);
 
   function fetchMoreListItems() {
-    setTimeout(() => {
-      setPageIndex(currentPageIndex + 1);
-      setIsFetching(false);
-    }, 2000);
+    fetch(`http://localhost:3001/vehicles?_page=${currentPageIndex}&_limit=5`)
+      .then(res => res.json())
+      .then(resData => {
+        dispatch({ type: "GET_VEHICLES", payload: resData });
+        setPageIndex(currentPageIndex + 1);
+        setIsFetching(false);
+      });
   }
 
   return (
