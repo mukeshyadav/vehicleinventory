@@ -3,7 +3,11 @@ export default function vehicleReducer(state, action) {
     case "GET_VEHICLES":
       const vehicles = [...state.vehicles, ...action.payload];
       return { ...state, vehicles: vehicles };
-      break;
+    case "SET_CURRENT_VEHICLE":
+      const currentVehicle = state.vehicles.filter(
+        vehicle => action.payload === vehicle.id
+      );
+      return { ...state, currentVehicle: currentVehicle };
     case "ADD_VEHICLE":
       return state;
       break;
