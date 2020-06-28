@@ -4,6 +4,7 @@ import Header from "./components/header";
 
 import VehicleList from "./components/VehicleList";
 import Filters from "./components/Filter";
+import VehicleDetails from "./components/VehicleDetails";
 
 import VehicleContext from "./context";
 import VehicleReducer from "./reducer";
@@ -21,7 +22,9 @@ export default function App() {
             <Filters />
             <VehicleList />
           </div>
-          <div className="w-3/4"></div>
+          <div className="w-3/4">
+            <VehicleDetails />
+          </div>
         </div>
       </div>
     </VehicleContext.Provider>
