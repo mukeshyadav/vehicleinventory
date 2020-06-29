@@ -31,7 +31,7 @@ export default function VehicleList() {
       <ul>
         {state.vehicles.map(vehicle => (
           <li
-            className="border-b pb-2 pt-2"
+            className="border-b pb-2 pt-2 cursor-pointer"
             key={vehicle.id}
             onClick={e =>
               dispatch({ type: "SET_CURRENT_VEHICLE", payload: vehicle.id })

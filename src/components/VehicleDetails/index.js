@@ -5,7 +5,7 @@ export default function VehicleDetails() {
   const { state } = useContext(vehicleContext);
 
   return (
-    <div className="details">
+    <div className="pt-12 pb-16 lg:p-12 w-full">
       {!state.currentVehicle && "Please select a vehicle for details"}
       {state.currentVehicle && (
         <div className="something">
